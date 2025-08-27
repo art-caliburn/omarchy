@@ -51,7 +51,7 @@ sudo pacman -S --noconfirm --needed \
   lazydocker \
   lazygit \
   less \
-  libqalculate \
+# libqalculate \
 # libreoffice \
   llvm \
 # localsend \
