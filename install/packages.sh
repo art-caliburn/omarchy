@@ -1,6 +1,6 @@
 sudo pacman -S --noconfirm --needed \
-  1password-beta \
-  1password-cli \
+# avahi g 1password-beta \
+# 1password-cli \
   alacritty \
   avahi \
   bash-completion \
@@ -10,26 +10,26 @@ sudo pacman -S --noconfirm --needed \
   btop \
   cargo \
   clang \
-  cups \
-  cups-browsed \
-  cups-filters \
-  cups-pdf \
-  docker \
-  docker-buildx \
-  docker-compose \
+# cups \
+# cups-browsed \
+# cups-filters \
+# cups-pdf \
+# docker \
+# docker-buildx \
+# docker-compose \
   dust \
-  evince \
+# evince \
   eza \
   fastfetch \
   fcitx5 \
   fcitx5-gtk \
   fcitx5-qt \
   fd \
-  ffmpegthumbnailer \
+  firefox \
   fzf \
   gcc14 \
   github-cli \
-  gnome-calculator \
+# gnome-calculator \
   gnome-keyring \
   gnome-themes-extra \
   gum \
@@ -41,38 +41,38 @@ sudo pacman -S --noconfirm --needed \
   hyprpicker \
   hyprshot \
   hyprsunset \
-  imagemagick \
+# imagemagick \
   impala \
-  imv \
+# imv \
   inetutils \
   jq \
-  kdenlive \
+# kdenlive \
   kvantum-qt5 \
   lazydocker \
   lazygit \
   less \
   libqalculate \
-  libreoffice \
+# libreoffice \
   llvm \
-  localsend \
+# localsend \
   luarocks \
   mako \
   man \
   mariadb-libs \
   mise \
-  mpv \
-  nautilus \
+# mpv \
+# nautilus \
   noto-fonts \
   noto-fonts-cjk \
   noto-fonts-emoji \
   noto-fonts-extra \
   nss-mdns \
   nvim \
-  obs-studio \
-  obsidian \
+# obs-studio \
+# obsidian \
   omarchy-chromium \
   pamixer \
-  pinta \
+# pinta \
   playerctl \
   plocate \
   plymouth \
@@ -84,29 +84,29 @@ sudo pacman -S --noconfirm --needed \
   python-terminaltexteffects \
   ripgrep \
   satty \
-  signal-desktop \
+# signal-desktop \
   slurp \
-  spotify \
+# spotify \
   starship \
   sushi \
   swaybg \
   swayosd \
-  system-config-printer \
+# system-config-printer \
   tldr \
   tree-sitter-cli \
   ttf-cascadia-mono-nerd \
   ttf-font-awesome \
   ttf-ia-writer \
   ttf-jetbrains-mono \
-  typora \
-  tzupdate \
-  ufw \
-  ufw-docker \
+# typora \
+# tzupdate \
+# ufw \
+# ufw-docker \
   unzip \
   uwsm \
   walker-bin \
   waybar \
-  wf-recorder \
+# wf-recorder \
   whois \
   wiremix \
   wireplumber \
@@ -116,7 +116,7 @@ sudo pacman -S --noconfirm --needed \
   xdg-desktop-portal-gtk \
   xdg-desktop-portal-hyprland \
   xmlstarlet \
-  xournalpp \
+# xournalpp \
   yaru-icon-theme \
   yay \
   zoxide
