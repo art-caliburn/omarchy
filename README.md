@@ -1,6 +1,6 @@
 # Omarchy
 
-Turn a fresh Arch installation into a fully-configured, beautiful, and modern web development system based on Hyprland by running a single command. That's the one-line pitch for Omarchy (like it was for Omakub). No need to write bespoke configs for every essential tool just to get started or to be up on all the latest command-line tools. Omarchy is an opinionated take on what Linux can be at its best.
+This is my own personal repo for my omarchy installation. Changes found here are specifically for my PC only, including monitors.conf as well as my personal dotfiles. Heavy testing was done on which packages could be safely removed to 'debloat' the omarchy install. If you do use this for your own install please make sure to edit the files in /config/ (specifically monitors.conf) otherwise you will run into issues. 
 
 Read more at [omarchy.org](https://omarchy.org).
 
