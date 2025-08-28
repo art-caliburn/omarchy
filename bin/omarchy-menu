@@ -54,8 +54,8 @@ aur_install_and_launch() {
   present_terminal "echo 'Installing $1 from AUR...'; yay -S --noconfirm $2 && setsid gtk-launch $3"
 }
 
-show_learn_menu() {
-  case $(menu "Wiki" "  Keybindings\n  Omarchy\n  Hyprland\n󰣇  Arch\n  Neovim\n󱆃  Bash") in
+show_wiki_menu() {
+  case $(menu "Learn" "  Arch\n  Hyprland\n  Bash\n󰣇  Neovim\n  Keybindings\n󱆃  Omarchy") in
   *Arch*) omarchy-launch-webapp "https://wiki.archlinux.org/title/Main_page" ;;
   *Hyprland*) omarchy-launch-webapp "https://wiki.hypr.land/" ;;
   *Bash*) omarchy-launch-webapp "https://devhints.io/bash" ;;
@@ -280,13 +280,12 @@ show_system_menu() {
 }
 
 show_main_menu() {
-  go_to_menu "$(menu "Go" "󰀻  Apps\n󰧑  Learn\n  Capture\n󰔎  Toggle\n  Style\n  Setup\n󰉉  Install\n󰭌  Remove\n  Update\n  System")"
+  go_to_menu "$(menu "Go" "󰀻  Wiki\n  Style\n󰔎  Capture\n  Toggle\n  Setup\n󰉉  Install\n󰭌  Remove\n  System")"
 }
 
 go_to_menu() {
   case "${1,,}" in
-  *apps*) walker -p "Launch…" ;;
-  *learn*) show_learn_menu ;;
+  *wiki*) show_wiki_menu ;;
   *style*) show_style_menu ;;
   *theme*) show_theme_menu ;;
   *capture*) show_capture_menu ;;
@@ -296,7 +295,6 @@ go_to_menu() {
   *setup*) show_setup_menu ;;
   *install*) show_install_menu ;;
   *remove*) show_remove_menu ;;
-  *update*) show_update_menu ;;
   *system*) show_system_menu ;;
   esac
 }
