@@ -55,12 +55,12 @@ aur_install_and_launch() {
 }
 
 show_learn_menu() {
-  case $(menu "Learn" "  Keybindings\n  Omarchy\n  Hyprland\n󰣇  Arch\n  Neovim\n󱆃  Bash") in
-  *Keybindings*) omarchy-menu-keybindings ;;
-  *Omarchy*) omarchy-launch-webapp "https://learn.omacom.io/2/the-omarchy-manual" ;;
-  *Hyprland*) omarchy-launch-webapp "https://wiki.hypr.land/" ;;
+  case $(menu "Wiki" "  Keybindings\n  Omarchy\n  Hyprland\n󰣇  Arch\n  Neovim\n󱆃  Bash") in
   *Arch*) omarchy-launch-webapp "https://wiki.archlinux.org/title/Main_page" ;;
+  *Hyprland*) omarchy-launch-webapp "https://wiki.hypr.land/" ;;
   *Bash*) omarchy-launch-webapp "https://devhints.io/bash" ;;
+  *Omarchy*) omarchy-launch-webapp "https://learn.omacom.io/2/the-omarchy-manual" ;;
+  *Keybindings*) omarchy-menu-keybindings ;;
   *Neovim*) omarchy-launch-webapp "https://www.lazyvim.org/keymaps" ;;
   *) show_main_menu ;;
   esac
@@ -189,9 +189,6 @@ show_install_menu() {
   *TUI*) present_terminal omarchy-tui-install ;;
   *Service*) show_install_service_menu ;;
   *Style*) show_install_style_menu ;;
-  *Development*) show_install_development_menu ;;
-  *Editor*) show_install_editor_menu ;;
-  *AI*) show_install_ai_menu ;;
   *Gaming*) show_install_gaming_menu ;;
   *) show_main_menu ;;
   esac
@@ -226,7 +223,7 @@ show_install_font_menu() {
 }
 
 show_remove_menu() {
-  case $(menu "Remove" "󰣇  Package\n  Web App\n  TUI\n󰸌  Theme\n󰈷  Fingerprint\n  Fido2") in
+  case $(menu "Remove" "󰣇  Package\n  Web App\n  TUI\n󰸌  Theme") in
   *Package*) terminal omarchy-pkg-remove ;;
   *Web*) present_terminal omarchy-webapp-remove ;;
   *TUI*) present_terminal omarchy-tui-remove ;;
@@ -236,12 +233,11 @@ show_remove_menu() {
 }
 
 show_update_menu() {
-  case $(menu "Update" " Omarchy\n  Config\n󰸌  Themes\n  Process\n  Timezone") in
+  case $(menu "Update" " Omarchy\n  Config\n󰸌  Themes\n  Process") in
   *Omarchy*) present_terminal omarchy-update ;;
   *Config*) show_update_config_menu ;;
   *Themes*) present_terminal omarchy-theme-update ;;
   *Process*) show_update_process_menu ;;
-  *Timezone*) omarchy-cmd-tzupdate ;;
   *) show_main_menu ;;
   esac
 }
