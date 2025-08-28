@@ -9,6 +9,9 @@ sudo pacman -S --noconfirm --needed \
   dust \
   eza \
   fastfetch \
+  fcitx5 \
+  fcitx5-gtk \
+  fcitx5-qt \
   fd \
   firefox \
   fzf \
