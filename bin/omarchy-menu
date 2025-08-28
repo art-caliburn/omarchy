@@ -55,7 +55,7 @@ aur_install_and_launch() {
 }
 
 show_wiki_menu() {
-  case $(menu "Learn" "  Arch\n  Hyprland\n  Bash\n󰣇  Neovim\n  Keybindings\n󱆃  Omarchy") in
+  case $(menu "Learn" "󰣇  Arch\n  Hyprland\n󱆃  Bash\n  Neovim\n  Keybindings\n  Omarchy") in
   *Arch*) omarchy-launch-webapp "https://wiki.archlinux.org/title/Main_page" ;;
   *Hyprland*) omarchy-launch-webapp "https://wiki.hypr.land/" ;;
   *Bash*) omarchy-launch-webapp "https://devhints.io/bash" ;;
@@ -287,7 +287,7 @@ go_to_menu() {
   *wiki*) show_wiki_menu ;;
   *style*) show_style_menu ;;
   *theme*) show_theme_menu ;;
-  *config*) show_config_menu ;;
+  *config*) show_setup_config_menu ;;
   *screenshot*) show_screenshot_menu ;;
   *screenrecord*) show_screenrecord_menu ;;
   *toggle*) show_toggle_menu ;;
