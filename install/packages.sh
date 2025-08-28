@@ -8,8 +8,8 @@ sudo pacman -S --noconfirm --needed \
   blueberry \
   brightnessctl \
   btop \
-  cargo \
-  clang \
+# cargo \
+# clang \
 # cups \
 # cups-browsed \
 # cups-filters \
@@ -48,14 +48,14 @@ sudo pacman -S --noconfirm --needed \
   jq \
 # kdenlive \
   kvantum-qt5 \
-  lazydocker \
+# lazydocker \
   lazygit \
   less \
 # libqalculate \
 # libreoffice \
   llvm \
 # localsend \
-  luarocks \
+# luarocks \
   mako \
   man \
   mariadb-libs \
