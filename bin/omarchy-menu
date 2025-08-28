@@ -195,10 +195,9 @@ show_install_menu() {
 }
 
 show_install_gaming_menu() {
-  case $(menu "Install" "  Steam\n  RetroArch [AUR]\n󰍳  Minecraft") in
+  case $(menu "Install" "  Steam\n  RetroArch [AUR]") in
   *Steam*) present_terminal omarchy-install-steam ;;
   *RetroArch*) aur_install_and_launch "RetroArch" "retroarch retroarch-assets libretro libretro-fbneo" "com.libretro.RetroArch.desktop" ;;
-  *Minecraft*) install_and_launch "Minecraft" "minecraft-launcher" "minecraft-launcher" ;;
   *) show_install_menu ;;
   esac
 }
@@ -280,7 +279,7 @@ show_system_menu() {
 }
 
 show_main_menu() {
-  go_to_menu "$(menu "Go" "󰀻  Wiki\n  Style\n󰔎  Capture\n  Toggle\n  Setup\n󰉉  Install\n󰭌  Remove\n  System")"
+  go_to_menu "$(menu "Go" "󰀻  Wiki\n  Style\n  Config\n  Toggle\n  Setup\n󰉉  Install\n󰭌  Remove\n  System")"
 }
 
 go_to_menu() {
@@ -288,7 +287,7 @@ go_to_menu() {
   *wiki*) show_wiki_menu ;;
   *style*) show_style_menu ;;
   *theme*) show_theme_menu ;;
-  *capture*) show_capture_menu ;;
+  *config*) show_config_menu ;;
   *screenshot*) show_screenshot_menu ;;
   *screenrecord*) show_screenrecord_menu ;;
   *toggle*) show_toggle_menu ;;

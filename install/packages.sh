@@ -57,7 +57,6 @@ sudo pacman -S --noconfirm --needed \
   tree-sitter-cli \
   ttf-cascadia-mono-nerd \
   ttf-font-awesome \
-  ttf-ia-writer \
   ttf-jetbrains-mono \
   unzip \
   uwsm \
