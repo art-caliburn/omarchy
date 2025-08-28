@@ -6,6 +6,7 @@ sudo pacman -S --noconfirm --needed \
   blueberry \
   brightnessctl \
   btop \
+  dust \
   eza \
   fastfetch \
   fd \
