@@ -1,6 +1,4 @@
 sudo pacman -S --noconfirm --needed \
-# avahi g 1password-beta \
-# 1password-cli \
   alacritty \
   avahi \
   bash-completion \
@@ -8,17 +6,6 @@ sudo pacman -S --noconfirm --needed \
   blueberry \
   brightnessctl \
   btop \
-# cargo \
-# clang \
-# cups \
-# cups-browsed \
-# cups-filters \
-# cups-pdf \
-# docker \
-# docker-buildx \
-# docker-compose \
-  dust \
-# evince \
   eza \
   fastfetch \
   fcitx5 \
@@ -29,7 +16,6 @@ sudo pacman -S --noconfirm --needed \
   fzf \
   gcc14 \
   github-cli \
-# gnome-calculator \
   gnome-keyring \
   gnome-themes-extra \
   gum \
@@ -41,38 +27,23 @@ sudo pacman -S --noconfirm --needed \
   hyprpicker \
   hyprshot \
   hyprsunset \
-# imagemagick \
-  impala \
-# imv \
   inetutils \
-  jq \
-# kdenlive \
   kvantum-qt5 \
-# lazydocker \
   lazygit \
   less \
-# libqalculate \
-# libreoffice \
   llvm \
-# localsend \
-# luarocks \
   mako \
   man \
   mariadb-libs \
   mise \
-# mpv \
-# nautilus \
   noto-fonts \
   noto-fonts-cjk \
   noto-fonts-emoji \
   noto-fonts-extra \
   nss-mdns \
   nvim \
-# obs-studio \
-# obsidian \
   omarchy-chromium \
   pamixer \
-# pinta \
   playerctl \
   plocate \
   plymouth \
@@ -84,29 +55,21 @@ sudo pacman -S --noconfirm --needed \
   python-terminaltexteffects \
   ripgrep \
   satty \
-# signal-desktop \
   slurp \
-# spotify \
   starship \
   sushi \
   swaybg \
   swayosd \
-# system-config-printer \
   tldr \
   tree-sitter-cli \
   ttf-cascadia-mono-nerd \
   ttf-font-awesome \
   ttf-ia-writer \
   ttf-jetbrains-mono \
-# typora \
-# tzupdate \
-# ufw \
-# ufw-docker \
   unzip \
   uwsm \
   walker-bin \
   waybar \
-# wf-recorder \
   whois \
   wiremix \
   wireplumber \
@@ -116,7 +79,6 @@ sudo pacman -S --noconfirm --needed \
   xdg-desktop-portal-gtk \
   xdg-desktop-portal-hyprland \
   xmlstarlet \
-# xournalpp \
   yaru-icon-theme \
   yay \
   zoxide
