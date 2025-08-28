@@ -8,18 +8,11 @@ sudo pacman -S --noconfirm --needed \
   btop \
   eza \
   fastfetch \
-  fcitx5 \
-  fcitx5-gtk \
-  fcitx5-qt \
   fd \
   firefox \
   fzf \
-  gcc14 \
-  github-cli \
-  gnome-keyring \
   gnome-themes-extra \
   gum \
-  gvfs-mtp \
   hypridle \
   hyprland \
   hyprland-qtutils \
@@ -34,7 +27,6 @@ sudo pacman -S --noconfirm --needed \
   llvm \
   mako \
   man \
-  mariadb-libs \
   mise \
   noto-fonts \
   noto-fonts-cjk \
@@ -48,16 +40,13 @@ sudo pacman -S --noconfirm --needed \
   plocate \
   plymouth \
   polkit-gnome \
-  postgresql-libs \
   power-profiles-daemon \
   python-gobject \
-  python-poetry-core \
   python-terminaltexteffects \
   ripgrep \
   satty \
   slurp \
   starship \
-  sushi \
   swaybg \
   swayosd \
   tldr \
