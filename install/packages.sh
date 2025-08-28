@@ -70,5 +70,6 @@ sudo pacman -S --noconfirm --needed \
   xdg-desktop-portal-hyprland \
   xmlstarlet \
   yaru-icon-theme \
+  yazi \
   yay \
   zoxide
