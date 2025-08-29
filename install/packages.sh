@@ -4,6 +4,7 @@ sudo pacman -S --noconfirm --needed \
   bash-completion \
   bat \
   blueberry \
+  bluetui \
   brightnessctl \
   btop \
   dust \
