@@ -7,11 +7,11 @@
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": [
-    "pulseaudio",
-    "temperature",
-    "bluetooth",
     "cpu",
-    "battery"
+    "temperature",
+    "memory",
+    "bluetooth",
+    "pulseaudio"
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -44,8 +44,8 @@
   },
 
   "cpu": {
-    "interval": 5,
-    "format": "󰍛",
+    "interval": 3,
+    "format": "󰍛 {usage:2}%",
     "on-click": "alacritty -e btop"
   },
   "temperature": {
@@ -65,6 +65,10 @@
     "format-alt": "{:%d %B W%V %Y}",
     "tooltip": false
   },
+  "memory": {
+	  "interval": 3,
+		"format": "  {}%  "
+	},
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format": "{icon}",
@@ -82,8 +86,6 @@
     "format": "",
     "format-disabled": "󰂲",
     "format-connected": "",
-    "min-length": 5,
-    "max-length": 5,
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "alacritty -e bluetui"
   },
@@ -93,8 +95,6 @@
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
-    "min-length": 5,
-    "max-length": 5,
     "format-muted": "󰝟",
     "format-icons": {
       "default": ["", "", ""]
