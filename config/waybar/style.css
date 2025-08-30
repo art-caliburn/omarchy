@@ -32,14 +32,15 @@
 
 #tray,
 #cpu,
-#battery,
+#memory,
 #network,
 #bluetooth,
 #pulseaudio,
+#cpu,
+#temperature,
 #custom-omarchy,
 #custom-update {
-  min-width: 12px;
-  margin: 0 7.5px;
+      padding: 0 12px;
 }
 
 #custom-expand-icon {
