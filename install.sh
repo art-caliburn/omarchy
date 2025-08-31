@@ -54,7 +54,7 @@ source $OMARCHY_INSTALL/login/limine-snapper.sh
 
 # Reboot
 clear
-echo "Rebooting"
+echo "Installation completed. Rebooting..."
 
 if sudo test -f /etc/sudoers.d/99-omarchy-installer; then
   sudo rm -f /etc/sudoers.d/99-omarchy-installer &>/dev/null

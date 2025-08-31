@@ -71,6 +71,7 @@ EOF
 fi
 
  sudo cp ~/.local/share/omarchy/boot.jpg /boot/boot.jpg
+ sudo cp ~/.local/share/omarchy/bash_profile ~/.bash_profile
 
 # Add UKI entry to UEFI machines to skip bootloader showing on normal boot
 if [ -n "$EFI" ] && efibootmgr &>/dev/null && ! efibootmgr | grep -q Omarchy &&
