@@ -18,7 +18,6 @@ sudo pacman -S --noconfirm --needed \
   gnome-themes-extra \
   gum \
   hyprland \
-  hyprlock \
   hypridle \
   hyprland-qtutils \
   hyprpicker \
@@ -42,7 +41,6 @@ sudo pacman -S --noconfirm --needed \
   pamixer \
   playerctl \
   plocate \
-  plymouth \
   polkit-gnome \
   power-profiles-daemon \
   python-gobject \
