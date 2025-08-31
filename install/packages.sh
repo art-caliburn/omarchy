@@ -18,6 +18,8 @@ sudo pacman -S --noconfirm --needed \
   gnome-themes-extra \
   gum \
   hyprland \
+  hyprlock \
+  hypridle \
   hyprland-qtutils \
   hyprpicker \
   hyprshot \
