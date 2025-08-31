@@ -48,9 +48,9 @@ source $OMARCHY_INSTALL/config/hardware/ignore-power-button.sh
 source $OMARCHY_INSTALL/config/hardware/nvidia.sh
 
 # Login
-source $OMARCHY_INSTALL/login/plymouth.sh
-source $OMARCHY_INSTALL/login/limine-snapper.sh
-source $OMARCHY_INSTALL/login/alt-bootloaders.sh
+# source $OMARCHY_INSTALL/login/plymouth.sh
+# source $OMARCHY_INSTALL/login/limine-snapper.sh
+# source $OMARCHY_INSTALL/login/alt-bootloaders.sh
 
 # Reboot
 clear
