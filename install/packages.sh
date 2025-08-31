@@ -17,10 +17,8 @@ sudo pacman -S --noconfirm --needed \
   fzf \
   gnome-themes-extra \
   gum \
-  hypridle \
   hyprland \
   hyprland-qtutils \
-  hyprlock \
   hyprpicker \
   hyprshot \
   hyprsunset \
