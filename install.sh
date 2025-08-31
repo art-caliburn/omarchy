@@ -40,7 +40,7 @@ source $OMARCHY_INSTALL/config/mise-ruby.sh
 # source $OMARCHY_INSTALL/config/mimetypes.sh
 source $OMARCHY_INSTALL/config/localdb.sh
 source $OMARCHY_INSTALL/config/hardware/network.sh
-# source $OMARCHY_INSTALL/config/hardware/fix-fkeys.sh
+source $OMARCHY_INSTALL/config/hardware/fix-fkeys.sh
 source $OMARCHY_INSTALL/config/hardware/bluetooth.sh
 # source $OMARCHY_INSTALL/config/hardware/printer.sh
 source $OMARCHY_INSTALL/config/hardware/usb-autosuspend.sh
