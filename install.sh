@@ -36,33 +36,31 @@ source $OMARCHY_INSTALL/config/ssh-flakiness.sh
 source $OMARCHY_INSTALL/config/detect-keyboard-layout.sh
 source $OMARCHY_INSTALL/config/xcompose.sh
 source $OMARCHY_INSTALL/config/mise-ruby.sh
-# source $OMARCHY_INSTALL/config/docker.sh
 # source $OMARCHY_INSTALL/config/mimetypes.sh
 source $OMARCHY_INSTALL/config/localdb.sh
 source $OMARCHY_INSTALL/config/hardware/network.sh
 source $OMARCHY_INSTALL/config/hardware/fix-fkeys.sh
 source $OMARCHY_INSTALL/config/hardware/bluetooth.sh
-# source $OMARCHY_INSTALL/config/hardware/printer.sh
 source $OMARCHY_INSTALL/config/hardware/usb-autosuspend.sh
 source $OMARCHY_INSTALL/config/hardware/ignore-power-button.sh
 source $OMARCHY_INSTALL/config/hardware/nvidia.sh
 
 # Login
-# source $OMARCHY_INSTALL/login/plymouth.sh
-# source $OMARCHY_INSTALL/login/limine-snapper.sh
-# source $OMARCHY_INSTALL/login/alt-bootloaders.sh
+source $OMARCHY_INSTALL/login/limine.sh
 
 sudo cp ~/.local/share/omarchy/boot.jpg /boot/boot.jpg
 sudo cp ~/.local/share/omarchy/bash_profile ~/.bash_profile
 
+echo "Creating login service."
+
+mkdir /etc/systemd/system/getty@tty1.service.d
+cp ~/.local/share/omarchy/skip-username.conf /etc/systemd/system/getty@tty1.service.d/skip-username.conf
+
 # Reboot
 clear
-echo "Installation completed. Rebooting..."
+echo "Installation completed."
 
 if sudo test -f /etc/sudoers.d/99-omarchy-installer; then
   sudo rm -f /etc/sudoers.d/99-omarchy-installer &>/dev/null
   echo -e "\nRemember to remove USB installer!\n\n"
 fi
-
-sleep 5
-reboot
