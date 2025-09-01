@@ -48,13 +48,16 @@ source $OMARCHY_INSTALL/config/hardware/nvidia.sh
 # Login
 source $OMARCHY_INSTALL/login/limine.sh
 
-sudo cp ~/.local/share/omarchy/boot.jpg /boot/boot.jpg
-sudo cp ~/.local/share/omarchy/bash_profile ~/.bash_profile
+sudo cp ~/.local/share/omarchy/install/boot.jpg /boot/boot.jpg
+sudo cp ~/.local/share/omarchy/install/bash_profile ~/.bash_profile
 
 echo "Creating login service."
 
 mkdir /etc/systemd/system/getty@tty1.service.d
-cp ~/.local/share/omarchy/skip-username.conf /etc/systemd/system/getty@tty1.service.d/skip-username.conf
+sudo cp ~/.local/share/omarchy/install/skip-username.conf /etc/systemd/system/getty@tty1.service.d/skip-username.conf
+sudo cp ~/.local/share/omarchy/install/issue /etc/issue
+sudo cp ~/.local/share/omarchy/install/motd /etc/motd
+
 
 # Reboot
 clear
