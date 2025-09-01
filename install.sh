@@ -49,8 +49,11 @@ source $OMARCHY_INSTALL/config/hardware/nvidia.sh
 
 # Login
 # source $OMARCHY_INSTALL/login/plymouth.sh
-source $OMARCHY_INSTALL/login/limine-snapper.sh
+# source $OMARCHY_INSTALL/login/limine-snapper.sh
 # source $OMARCHY_INSTALL/login/alt-bootloaders.sh
+
+sudo cp ~/.local/share/omarchy/boot.jpg /boot/boot.jpg
+sudo cp ~/.local/share/omarchy/bash_profile ~/.bash_profile
 
 # Reboot
 clear
