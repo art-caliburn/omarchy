@@ -11,7 +11,7 @@ for f in ~/.local/share/omarchy/themes/*; do ln -nfs "$f" ~/.config/omarchy/them
 # Set initial theme
 mkdir -p ~/.config/omarchy/current
 ln -snf ~/.config/omarchy/themes/futurism ~/.config/omarchy/current/theme
-ln -snf ~/.config/omarchy/current/theme/backgrounds/3-futurism.jpg ~/.config/omarchy/current/background
+ln -snf ~/.config/omarchy/current/theme/backgrounds/3-futurism.png ~/.config/omarchy/current/background
 
 # Set specific app links for current theme
 ln -snf ~/.config/omarchy/current/theme/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
