@@ -53,10 +53,11 @@ sudo cp ~/.local/share/omarchy/install/bash_profile ~/.bash_profile
 
 echo "Creating login service."
 
-mkdir /etc/systemd/system/getty@tty1.service.d
+sudo mkdir /etc/systemd/system/getty@tty1.service.d
 sudo cp ~/.local/share/omarchy/install/skip-username.conf /etc/systemd/system/getty@tty1.service.d/skip-username.conf
 sudo cp ~/.local/share/omarchy/install/issue /etc/issue
 sudo cp ~/.local/share/omarchy/install/motd /etc/motd
+yay -S --noconfirm --needed rose-pine-hyprcursor
 
 
 # Reboot
