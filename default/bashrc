@@ -32,3 +32,5 @@ alias please='sudo'
 alias cat='bat '
 alias update='sudo pacman -Syu'
 alias upgrade='sudo pacman -Syu'
+
+export STARSHIP_CONFIG=~/.config/omarchy/current/theme/starship.toml
