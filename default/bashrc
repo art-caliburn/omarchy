@@ -33,4 +33,19 @@ alias cat='bat '
 alias update='sudo pacman -Syu'
 alias upgrade='sudo pacman -Syu'
 
+if !  systemctl is-active --quiet bootmsg; then
+  fastfetch
+  echo
+  echo "Welcome to caliburn! Running daemon diagnostics:"
+  systemctl --failed
+  echo
+  sudo systemctl start bootmsg.service
+  echo "Todays quote is:"
+  fortune
+  echo
+  echo "happy autisming"
+  echo " "
+fi
+
+
 export STARSHIP_CONFIG=~/.config/omarchy/current/theme/starship.toml

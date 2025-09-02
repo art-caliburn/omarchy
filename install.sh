@@ -59,7 +59,7 @@ sudo cp ~/.local/share/omarchy/install/issue /etc/issue
 sudo cp ~/.local/share/omarchy/install/motd /etc/motd
 yay -S --noconfirm --needed rose-pine-hyprcursor
 echo "arthur ALL=(ALL:ALL) NOPASSWD: /usr/bin/systemctl start bootmsg.service" | sudo tee "/etc/sudoers.d/no-bootmsg-prompt"
-
+sudo cp ~/.local/share/omarchy/install/bootmsg.service /etc/systemd/system/bootmsg.service
 
 # Reboot
 clear
