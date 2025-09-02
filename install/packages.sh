@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm --needed \
   btop \
   dust \
   eza \
-  fortune \
+  fortune-mod \
   fastfetch \
   fcitx5 \
   fcitx5-gtk \
