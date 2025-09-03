@@ -10,12 +10,10 @@ sudo pacman -S --noconfirm --needed \
   eza \
   fortune-mod \
   fastfetch \
-  fcitx5 \
-  fcitx5-gtk \
-  fcitx5-qt \
   fd \
   firefox \
   fzf \
+  gamescope \
   gnome-themes-extra \
   gum \
   hyprland \
