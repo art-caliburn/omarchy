@@ -13,14 +13,11 @@ source $OMARCHY_INSTALL/preflight/guard.sh
 source $OMARCHY_INSTALL/preflight/chroot.sh
 source $OMARCHY_INSTALL/preflight/repositories.sh
 source $OMARCHY_INSTALL/preflight/migrations.sh
-# source $OMARCHY_INSTALL/preflight/first-run-mode.sh
 
 # Packaging
 source $OMARCHY_INSTALL/packages.sh
-# source $OMARCHY_INSTALL/packaging/asdcontrol.sh
 source $OMARCHY_INSTALL/packaging/fonts.sh
 source $OMARCHY_INSTALL/packaging/lazyvim.sh
-# source $OMARCHY_INSTALL/packaging/webapps.sh
 source $OMARCHY_INSTALL/packaging/tuis.sh
 
 # Configuration
@@ -60,10 +57,10 @@ sudo cp ~/.local/share/omarchy/install/motd /etc/motd
 yay -S --noconfirm --needed rose-pine-hyprcursor
 echo "arthur ALL=(ALL:ALL) NOPASSWD: /usr/bin/systemctl start bootmsg.service" | sudo tee "/etc/sudoers.d/no-bootmsg-prompt"
 sudo cp ~/.local/share/omarchy/install/bootmsg.service /etc/systemd/system/bootmsg.service
+xdg-settings set default-web-browser firefox.desktop
 
 # Reboot
-clear
-echo "Installation completed."
+echo "Installation completed. Reboot to access system."
 
 if sudo test -f /etc/sudoers.d/99-omarchy-installer; then
   sudo rm -f /etc/sudoers.d/99-omarchy-installer &>/dev/null
